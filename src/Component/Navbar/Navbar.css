@@ -1,0 +1,130 @@
+/* CSS Variables for easy theming and responsive adjustments */
+:root {
+    --primary-color: #bf40bf;
+    --text-color: #333;
+    --bg-color: #ffffff;
+    --button-text-color: #ffffff;
+    --font-family: 'Arial', sans-serif;
+    --padding: 1rem;
+    --transition-speed: 0.3s;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding) 2rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .nav-logo h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+  
+  .links ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  
+  .links ul li {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: color var(--transition-speed);
+  }
+  
+  .links ul li:hover {
+    color: var(--primary-color);
+  }
+  
+  .nav_btn button {
+    padding: 0.8rem 2.5rem;
+    color: var(--button-text-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform var(--transition-speed), background-color var(--transition-speed);
+  }
+  
+  .nav_btn button:hover {
+    transform: scale(1.05);
+    background-color: darken(var(--primary-color), 10%);
+  }
+  
+  /* Responsive Mobile Menu */
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .navbar-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    transition: all var(--transition-speed);
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .links ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background-color: var(--bg-color);
+      padding: 1rem;
+      transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: transform var(--transition-speed) ease, opacity var(--transition-speed) ease;
+    }
+  
+    .links ul.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    .navbar-toggle {
+      display: flex;
+    }
+  }
+  
+  /* Animation for Toggle Button */
+  .navbar-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .navbar-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .navbar-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  

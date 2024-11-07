@@ -1,0 +1,44 @@
+.about{
+    display: flex;
+    padding-inline: 100px;
+    justify-content: space-between;
+    height: 120vh;
+    margin-top: -40px;
+    background-color: #fff;
+    gap: 50px;
+}
+.left-side, .right_side{
+    margin-top: 50px;
+
+}
+.left-side img{
+    width: 500px;
+    height: 720px;
+    border-radius: 30px;
+    object-fit: contain;
+}
+.right_side .right_header{
+
+    font-size: 3rem;
+    margin-bottom: 15px;
+     
+}
+.right_header p{
+    font-size: 20px;
+
+}
+.list_container{
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+.list{
+    display: flex;
+    gap: 15px;
+}
+.icon{
+    color: #bf40bf;
+    font-size: 34px;
+}

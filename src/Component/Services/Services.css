@@ -1,0 +1,45 @@
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 6rem;
+    background-color: #ebebeb;
+}
+.service-card{
+    position: relative;
+    background-color: #fff;
+    padding: 3.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    transition: transform 0.3s ease;
+}
+.service-card:hover{
+    transform: translate(-5px);
+}
+.service-icon{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.service-title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+.service-description{
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem;
+}
+.expand-bt{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.9rem;
+    cursor: pointer; 
+    font-size: 2rem;
+
+}

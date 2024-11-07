@@ -1,0 +1,79 @@
+.feedback {
+    padding: 5px 40px;
+    height: 75vh;
+    background-color: #f9f9f9;
+    margin-top: -30px;
+    overflow-x: hidden;
+}
+
+.feedback h2 {
+    margin-top: 30px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.customer {
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.feedback-item {
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Reduced gap to make it more reasonable */
+    border-radius: 10px;
+    padding: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+}
+
+.feedback-item p {
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.feedback-item .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feedback-item .user p {
+    font-size: 12px;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Styling for the comment section */
+.comment {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for size change */
+}
+
+/* Hover effect for the comment */
+.comment:hover {
+    transform: scale(1.05); /* Increases size by 5% when hovering */
+}
+
+.feedback .customer::-webkit-scrollbar {
+    height: 8px;
+}
+
+.feedback .customer::-webkit-scrollbar-thumb {
+    background-color: #bf40bf;
+    border-radius: 10px;
+}
