@@ -1,14 +1,18 @@
 {
+  "homepage": "https://tewos-21.github.io/tewo-tech-web",
+
   "name": "react-vite-demo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+   "start": "vite",
+  "dev": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+
+
   },
   "dependencies": {
     "react": "^18.3.1",

@@ -1,9 +1,9 @@
-import React from 'react'
-import { FaExpandAlt, FaLaptopCode } from 'react-icons/fa'
-import './Services.css'
-const Services = () => {
+import React from 'react';
+import { FaExpandAlt, FaLaptopCode } from 'react-icons/fa';
+import './Services.css';
 
-    const services  = [
+const Services = () => {
+    const services = [
         {
             title: 'Graphics Design',
             description: 'TewoTech offers stunning graphic design services that enhance brand identity and create visually compelling content, ensuring your message resonates with your target audience.',
@@ -24,22 +24,22 @@ const Services = () => {
             description: 'TewoTech provides comprehensive software testing services that ensure your applications are reliable, secure, and perform optimally under real-world conditions.',
             icon: <FaLaptopCode />,
         }
-    ]
-  
-    return (
-      <div>
-          <div className="services-container border">
-              {services.map((service, index) => (
-                  <div className="service-card" key={index}>
-                      <div className="service-icon">{service.icon}</div>
-                      <h3 className="service-title">{service.title}</h3>
-                      <p className="service-description">{service.description}</p>
-                      <button className="expand-bt"><FaExpandAlt /></button>
-                  </div>
-              ))}
-          </div>
-      </div>
-    )
-}
+    ];
 
-export default Services
+    return (
+        <div id="services">
+            <div className="services-container border">
+                {services.map((service, index) => (
+                    <div className="service-card" key={index}>
+                        <div className="service-icon">{service.icon}</div>
+                        <h3 className="service-title">{service.title}</h3>
+                        <p className="service-description">{service.description}</p>
+                        <button className="expand-bt"><FaExpandAlt /></button>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
+
+export default Services;

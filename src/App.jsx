@@ -7,19 +7,30 @@ import About from './Component/About/About'
 import Feedback from './Component/Feedback/Feedback'
 import Footer from './Component/Footer/Footer'
 
-
-
-
 const App = () => {
   return (
     <div>
       <Navbar />
-      <Hero />
-      <Services />
-      <Project />
-      <About />
-      <Feedback />
-      <Footer />
+      
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
+      <div id="project">
+        <Project />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="feedback">
+        <Feedback />
+      </div>
+      <div id="footer">
+        <Footer />
+      </div>
+      
     </div>
   )
 }
