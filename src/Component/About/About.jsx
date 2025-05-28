@@ -3,7 +3,10 @@ import { IoCheckmarkCircle } from 'react-icons/io5';
 import about_img from '../../assets/about.jpg';
 import './About.css'
 const About = () => {
+// List of services offered by the company
+// This list can be expanded or modified as needed
   const about_list = [
+    
     {
       icon: <IoCheckmarkCircle />,
       title: 'Software Development',
