@@ -3,7 +3,8 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+ // Function to toggle the mobile menu
+  // This function toggles the state of the menu between open and closed
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
