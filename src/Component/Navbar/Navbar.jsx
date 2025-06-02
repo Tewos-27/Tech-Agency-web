@@ -16,6 +16,7 @@ const Navbar = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      // If the menu is open, close it after scrolling
       setIsMenuOpn(false); // Close menu after clicking on mobile
     }
   };
@@ -26,6 +27,7 @@ const Navbar = () => {
         <h2>TewosTech</h2>
       </div>
       <div className={`links ${isMenuOpen ? 'active' : ''}`}>
+        
         <ul>
           <li onClick={() => scrollToSection('hero')}>Home</li>
           <li onClick={() => scrollToSection('about')}>About</li>
