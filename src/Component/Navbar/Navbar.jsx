@@ -8,13 +8,15 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+   
   // Function to scroll to the section
+  // This function scrolls to a specific section of the page
+  // It takes the section ID as an argument and uses `scrollIntoView` to scroll smoothly
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false); // Close menu after clicking on mobile
+      setIsMenuOpn(false); // Close menu after clicking on mobile
     }
   };
 
