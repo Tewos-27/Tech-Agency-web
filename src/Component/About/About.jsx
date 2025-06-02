@@ -41,7 +41,7 @@ const About = () => {
             TewoTech is a forward-thinking technology company based in Addis Ababa, committed to driving digital innovation and delivering transformative solutions. 
             Our team specializes in software development, IT consulting, and tech-driven strategies tailored to meet modern business needs. At TewoTech, we are passionate about empowering businesses to reach their full potential in today’s digital world.
           </p>
-
+          
           {about_list.map(({ icon, title }, index) => (
             <div className="list_container" key={index}>
               <div className="list">
