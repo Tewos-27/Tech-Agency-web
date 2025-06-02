@@ -3,6 +3,8 @@ import { FaExpandAlt, FaLaptopCode } from 'react-icons/fa';
 import './Services.css';
 
 const Services = () => {
+    // Array of service objects
+    // This array contains the services offered by TewoTech, each with a title, description, and icon
     const services = [
         {
             title: 'Graphics Design',
