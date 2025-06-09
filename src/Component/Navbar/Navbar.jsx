@@ -37,6 +37,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="nav_btn">
+        
         <button onClick={() => scrollToSection('footer')}>Contact Us</button>
       </div>
       <div className={`navbar-toggle ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
