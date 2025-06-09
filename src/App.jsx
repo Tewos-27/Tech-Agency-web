@@ -10,6 +10,7 @@ import Footer from './Component/Footer/Footer'
 const App = () => {
   return (
     <div>
+      
       <Navbar />
       
       <div id="hero">
